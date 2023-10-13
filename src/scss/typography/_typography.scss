@@ -1,0 +1,33 @@
+@mixin header-menu{
+    font-size: 14px;
+}
+@mixin main-heading{
+    font-size: 38px;
+    font-weight: 300;
+}
+@mixin heading-info{
+    font-family: 'GT-flexa-light';
+    font-weight: 400;
+    font-size: 38px;
+    color: #1c3532;
+}
+@mixin heading-32{
+    font-family: 'GT-flexa-light';
+    font-size: 32px;
+    font-weight: 400;
+    color: #1c3532;
+}
+@mixin heading-footer{
+    font-family: 'GT-flexa-light';
+    font-size: 16px;
+    font-weight: 400;
+}
+@mixin paragraph-mid{
+    font-family: 'GT-flexa-regular';
+    font-size: 16px;
+    font-weight: 300;
+}
+@mixin paragraph-mid2{
+    font-size: 14px;
+    font-weight: 200px;
+}

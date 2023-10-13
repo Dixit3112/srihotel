@@ -1,0 +1,154 @@
+@import "../../scss/global.scss";
+
+.footer{
+    cursor: pointer;
+    background-color: $theme-primary-color;
+    .footer-main-padding {
+        max-width: 1280px;
+        padding-top: 40px;
+        margin: 80px auto 0 auto;
+        .footer-flex-main {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            justify-content: space-between;
+            gap: 20px;
+            background-color: $theme-primary-color;
+            padding: 40px 80px;
+            .footer-flex-item {
+                border-top: 2px solid #C1C1C1;
+                .footer-border-top {
+                    display: flex;
+                    flex-direction: column;
+                    .icon-plus{
+                        display: none;
+                    }
+                    h4 {
+                        color: #fff;
+                        @include heading-footer;
+                        padding: 10px 0px 5px 0px;
+                    }
+                    .footer-hoveAfter{
+                        display: flex;
+                        justify-content: start;
+                        a {
+                            text-decoration: none;
+                            color: #f1f2f2;
+                            @include paragraph-mid2;
+                            cursor: pointer;
+                            width: fit-content;
+                            &::after {
+                                content: '';
+                                margin: 3.5px 0;
+                                width: 0%;
+                                height: 1px;
+                                background-color: #fff;
+                                display: block;
+                                transition: 0.3s ease-in-out;
+                            }
+                            &:hover::after {
+                                width: 100%;
+                                transition: 0.5s ease-in-out;
+                            }
+                        }
+                    }
+                    .center-btn{
+                        display: flex;
+                        justify-content: center;
+                        button {
+                            width: 200px;
+                            line-height: 18px;
+                            @include paragraph-mid;
+                        }
+                    }
+                }
+            }
+            .footer-flex-item{
+                .footer-border-top{
+                        .topic-head{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .icon-plus{
+                                font-size: 36px;
+                                padding: 10px 0px 0px 0px;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .footer-flex-item:nth-child(3){
+                    .footer-border-top{
+                        .footer-hoveAfter{
+                                width: 250px;
+                        }
+                    }
+
+                }
+        }
+        .terms {
+            p {
+                padding: 40px 80px;
+                color: #fff;
+                font-size: 12px;
+                line-height: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+@media (max-width: 576px){
+    .footer{
+        max-width: 576px;
+        padding: 0px;
+        margin: 0px;
+        .footer-main-padding{
+            max-width: 576px;
+            .footer-flex-main{
+                display: flex;
+                flex-direction: column;
+                .footer-flex-item:nth-child(1),
+                .footer-flex-item:nth-child(2),
+                .footer-flex-item:nth-child(3),
+                .footer-flex-item:nth-child(4){
+                    order: 2;
+                    a{
+                        display: none;
+                    }
+                    h4{
+                        text-align: start;
+                    }
+                }
+                .footer-flex-item:nth-child(5){
+                    display: grid;
+                    justify-content: start;
+                    h4{
+                        text-align: start;
+                    }
+                    button{
+                        width: 100px;
+                        padding: 5px 6px;
+                    }                    
+                }
+                .footer-flex-item{
+                    .footer-border-top{
+                        .topic-head{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        .icon-plus{
+                            display: block;
+                        }
+                    }
+                }
+                .footer-flex-item:nth-child(4){
+                    border-bottom: 2px solid #c1c1c1;
+                    h4{
+                        padding: 20px 5px;
+                    }
+                }
+            }
+        }
+    }
+}

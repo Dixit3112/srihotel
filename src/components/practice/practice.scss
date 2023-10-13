@@ -1,0 +1,128 @@
+.practice{
+    .main-practice{
+
+        .form-div{
+            background-color: #456831;
+            border: 1px solid;
+            select {
+                margin: 10px 50px;
+                padding: 5px;
+                font-size: 16px;
+                width: 200px;
+            }
+            
+            .iconChange {
+                background-image: url('../../assets/icons/SIRO.svg'); 
+                background-repeat: no-repeat;
+                background-position: right 2px center;
+                background-size: 20px;
+                height: 25px;
+                border: none;
+                appearance: none;
+            }
+        }
+        .text{
+        textarea{
+            height: 120px;
+            width: 100%;
+            background: #4db8df;
+            resize: vertical;
+        }
+    }
+    select{
+        width: 450px;
+        background: #0f0;
+        
+    }
+    input[type="number" ] {
+        height: 50px;
+        width: 150px;
+        margin: 10px 20px;
+        &::-webkit-inner-spin-button{
+            display: none;
+            appearance: none;
+        }
+    }
+    input[type="checkbox"]{
+        accent-color: #ec0b3c;
+        width: 100px;
+        height: 50px;
+        border: none;
+    }
+    input[type="radio"] {
+        width: 100px;
+        height: 50px;
+        accent-color: #5896f0;
+    }
+    input[type="date"]{
+        background-image: url("../../assets/icons/heart-cal.svg");
+        background-repeat: no-repeat;
+        background-position: right 10px center;
+        background-size: 15px;
+        background-color: #264898;
+        color: #0ff;
+        height: 50px;
+        width: 500px;
+        border: none;
+        border-radius: 10px;
+        &::-webkit-calendar-picker-indicator {
+          display: none;
+        }
+        }
+    }
+    .card-responsive{
+        text-align: center;
+        display: flex;
+        gap: 50px;
+        .card1{
+            color: #011d5c;
+            width: 450px;
+            height: 300px;
+            background-color: #6f73df;
+            border: 5px solid rgb(135, 135, 4);
+            p{
+                color: #0ff;
+                &::selection{
+                    color: #ec2eb9;
+                    background-color: #160d7d;
+                }
+            }
+        }
+    }
+}
+@media (max-width:768px){
+    .practice{
+        .main-practice{
+            width: 100%;
+        }
+        .card-responsive{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            .card1{
+                width: 100%;
+            }
+        }
+    }    
+}
+@media (min-width:1280px){
+    .practice{
+        width: 100%;
+        .main-practice{
+            display: flex;
+            flex-wrap: wrap;
+            .form-div{
+                width: 100%;
+            }
+            .text{
+                width:100%;
+            }
+        }
+        .card-responsive{
+            width: 100%;
+            .card1{
+                width: 100%;
+            }
+        }        
+    }
+}

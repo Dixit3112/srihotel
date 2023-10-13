@@ -1,0 +1,24 @@
+@import "../../../scss/global.scss";
+
+.hero{
+    .main-hero{
+        position: relative;
+        video{
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+        }
+        .main-text{
+
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            .text-on-video{
+                width: 585px;
+                h1{
+                    @include heading-info;
+                }
+            }
+        }
+    }
+}

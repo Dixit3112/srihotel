@@ -1,0 +1,25 @@
+@mixin header-menu-font{
+    font-size: 14px;
+    // line-height: 24px;
+}
+@mixin head-bet-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-head-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+@mixin grid-center{
+    display:grid;
+    align-items: center;
+}
+
+@mixin grid-center-2{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}

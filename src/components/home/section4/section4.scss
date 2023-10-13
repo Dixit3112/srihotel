@@ -1,0 +1,95 @@
+@import "../../../scss/global.scss";
+.recovery-lab{
+    .main-recoveryLab{
+        max-width: 1280px;
+        margin: 20px auto;
+        justify-content: center;
+        .info-recovery{
+            text-align: center;
+            padding: 80px 0;
+            margin: 0 auto;
+            h4{
+                margin: 0 0 16px 0;
+                @include heading-info;
+            }
+            .info{
+                display: flex;
+                justify-content: center;    
+                p{
+                    text-align: center;
+                    max-width: 80%;
+                }
+            }
+        }
+        .spa{
+            img{
+                border-radius: 15px;
+                width: 1280px;
+                height: 852px;
+            }
+        }
+        .grid-3img-gap{
+            margin: 20px auto;
+            @include grid-center;
+            grid-template-columns: repeat(3,1fr );
+            gap: 10px;
+            img{
+                border-radius: 15px;
+                height: 561px;
+            }
+        }
+    }
+    .massag-main{
+        margin: 30px 0;
+        img{
+            width: 100%;
+            height: 711px;
+        }
+    }
+}
+@media (max-width: 576px){
+    .recovery-lab{
+        max-width: 100%;
+        .main-recoveryLab{
+            margin: 10px auto;
+            .info-recovery{
+                h4{
+                    font-size: 24px;
+                }
+                p{
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+            .spa{
+                margin: 0;
+                padding: 0;
+                img{
+                    margin: 0 35px;
+                    padding: 0;
+                    width: 505px;
+                    height: 228px;  
+                }
+            }
+            .grid-3img-gap{
+                margin: 10px auto;
+                @include grid-center;
+                grid-template-columns: repeat(3,1fr);
+                overflow-x: scroll;
+
+                img{
+                    border-radius: 10px;
+                    height: 561px;
+                }
+            }
+        }
+        .massag-main{
+            margin: 15px 0;
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 700px;
+            }
+        }
+    }
+}
