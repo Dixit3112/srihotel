@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
        <Main />
-     // <Aboutus />
+   {/* <Aboutus /> */}
     </div>
   );
 }
