@@ -5,8 +5,10 @@ import Aboutus from "./routes/about us";
 function App() {
   return (
     <div className="App">
-       <Main />
-   {/* <Aboutus /> */}
+
+   'this is updated one'
+      {/* <Main /> */}
+    <Aboutus /> 
     </div>
   );
 }
