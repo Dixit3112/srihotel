@@ -5,8 +5,6 @@ import Main from "./routes/home";
 function App() {
   return (
     <div className="App">
-
-   'this is updated one'
       <Main /> 
     {/* <Aboutus /> */} 
     </div>
