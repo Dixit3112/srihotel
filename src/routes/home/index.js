@@ -14,7 +14,6 @@ import Footer from "../../common/footer";
 export default function Main() {
   return (
     <div>
-      {/* <Practice /> */}
       <Header />
       <Herobanner />
       <Performsec />
